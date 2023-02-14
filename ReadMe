@@ -6,6 +6,8 @@ sudo: usede to access restricted files and operations. By default ,linux restrci
 ap-get: works with ubuntu's APT library to perform in installation of new software packages, removing existing software packages and even used to 
         upgrade the entire operating system.
 
+ip adress: 2.54.170.190.66
+
 checkpoint 1:
 4) sudo apt-get install apache2
    sudo apt-get install mysql-server
