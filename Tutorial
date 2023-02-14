@@ -1,0 +1,6 @@
+1)sudo (Super User DO) command in Linux is generally used as a prefix of some command that only superuser are allowed to run. 
+If you prefix “sudo” with any command, it will run that command with elevated privileges or in other words allow a user with proper permissions to execute
+a command as another user, such as the superuser
+
+2) works with ubuntu's APT library to perform intstallion of new software packages, removing existing software packages, upgrading new software packakges and
+even used to upgrade the entire operating system. 
