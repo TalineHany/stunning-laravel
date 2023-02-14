@@ -1,0 +1,62 @@
+pre project:
+sudo: usede to access restricted files and operations. By default ,linux restrcicts acess to certain parts of the system preventing sensitive files
+           from being comprimised. The sudo command temporarily elevates privilidges allowing users to complete sensitive tasks without logging in as the
+           root user.
+
+ap-get: works with ubuntu's APT library to perform in installation of new software packages, removing existing software packages and even used to 
+        upgrade the entire operating system.
+
+checkpoint 1:
+4) sudo apt-get install apache2
+   sudo apt-get install mysql-server
+   sudo apt-get install php-mysql
+   sudo apt-get install php
+   sudo apt-get install libapache2-mod-php
+   sudo apt-get install php-mcrypt
+   sudo apt-get install php pear
+   sudo apt-get install curl
+   sudo apt-get install php-curl
+   sudo apt-get install php-cli
+   sudo apt-get instasll git
+5) sudo “a2enmod rewrite
+6) sudo systemctl restart apache2
+
+checkpoint 2:
+1)cd /var/www/html
+2)pwd
+3)sudo git clone https://github.com/NinjaCoder8/stunning-laravel.git
+
+checkpoint 3:
+1)tested: curl -sS https://getcomposer.org/installer | sudo php — — install-dir=/usr/local/bin — filename=comp
+2) it didn't work, correct command: curl -sS https://getcomposer.org/installer | sudo php -- -- install-dir=/usr/local/bin -- filename=comp
+3)sudo apt install composer
+
+checkpoint 4:
+1)pwd
+2)sudo cp .env.example .env
+3)sudo vim .env
+4) escape shift + : x
+5)sudo php artisan key:generate
+
+checkpoint 5:
+1)which apache2
+2)cd /etc/apache2
+3)ls
+4)sudo vim apache2.conf
+5)cd sites-enabled
+6)sudo vim 000-default.conf
+7)sudo systemctl restart apache2
+
+checkpoint 6:
+1)cd /var/www/html/stunning-laravel
+2)sudo chgrp -R www-data storage bootstrap/cache
+meaning: This is a command in the Linux terminal that changes the group ownership of the "storage" and "bootstrap/cache" directories,
+as well as all files and subdirectories within them, to "www-data". The "-R" option means the change is applied recursively to all files and
+directories within the specified directories. "sudo" is used to run the command with superuser privileges, which may be necessary depending on 
+the file permissions.
+3)sudo chmod -R ug+rwx storage bootstrap/cache”
+meaning:This is a command in the Linux terminal that changes the file permissions of the "storage" and "bootstrap/cache" directories, 
+as well as all files and subdirectories within them, to give the owner and group members of those files read, write, and execute permissions.
+Specifically, "u" refers to the owner of the file, "g" refers to the group the file belongs to, "+rwx" adds read, write, and execute permissions to the
+file or directory, and "-R" applies the change recursively to all files and directories within the specified directories.
+"sudo" is used to run the command with superuser privileges, which may be necessary depending on the current file permissions.
