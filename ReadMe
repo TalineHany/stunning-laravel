@@ -56,7 +56,7 @@ meaning: This is a command in the Linux terminal that changes the group ownershi
 as well as all files and subdirectories within them, to "www-data". The "-R" option means the change is applied recursively to all files and
 directories within the specified directories. "sudo" is used to run the command with superuser privileges, which may be necessary depending on 
 the file permissions.
-3)sudo chmod -R ug+rwx storage bootstrap/cache”
+3)sudo chmod -R ug+rwx storage bootstrap/cache
 meaning:This is a command in the Linux terminal that changes the file permissions of the "storage" and "bootstrap/cache" directories, 
 as well as all files and subdirectories within them, to give the owner and group members of those files read, write, and execute permissions.
 Specifically, "u" refers to the owner of the file, "g" refers to the group the file belongs to, "+rwx" adds read, write, and execute permissions to the
